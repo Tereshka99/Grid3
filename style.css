@@ -10,12 +10,32 @@ body{
 }
 
 
+
+.offer{
+   background-image: url(./assets/gr.jpg);
+   height: 900px;
+   background-position: 100% 0;
+   background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
 .container{
     max-width: 1170px;
     padding: 0 15px;
     margin: 0 auto;
     text-align: center ;
 }
+
+
+
+
+
+
 .txt1{
     font-style: normal;
     font-weight: 800;

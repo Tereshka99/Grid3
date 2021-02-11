@@ -34,22 +34,27 @@ body{
 
 
 
-
+.title{
+    
+}
 
 .txt1{
     font-style: normal;
     font-weight: 800;
     font-size: 96px;
+    z-index: 5;
 }
 .txt2{
     font-style: normal;
     font-weight: 900;
     font-size: 64px;
+    
 }
 .txt1 > span{
     color: red;
     position: relative;
-
+    z-index: 2;
+    
 }
 
 .txt1 > span:after{

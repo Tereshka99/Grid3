@@ -22,12 +22,10 @@ body{
 
 .header{
    box-shadow: 0px -3px 8px;
-   
 }
 
 
 .menu{
-    
     display: grid;
     grid-template-columns: 70px 170px 685px 182px;
     grid-template-rows: 1fr;
@@ -164,17 +162,21 @@ a{
     font-size: 96px;
     z-index: 5;
 }
-.txt2{
+.txt2:before{
+    content: "To represent a product";
     font-style: normal;
     font-weight: 900;
     font-size: 64px;
-    
 }
 .txt1 > span{
     color: red;
     position: relative;
     z-index: 2;
     
+}
+
+.txt1 > span:before{
+    content: "fine";
 }
 
 .txt1 > span:after{
@@ -293,4 +295,128 @@ a{
 .btn:hover{
     color: #7c6bf8;
     background: #2D3436;
+}
+
+
+
+
+
+@media screen and (max-width: 1181px){
+    
+    .menu{
+       
+        grid-template-columns: 50px 150px 625px 152px;
+        
+    }
+
+
+
+
+    .subtitle_card{
+       
+        grid-template-columns: 263px 290px 160px 142px 135px;
+        
+    }
+}
+
+@media screen and (max-width: 1087px){
+
+    .subtitle_card{
+       
+        grid-template-columns: 263px 290px 160px 142px 110px;
+        
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1060px){
+   
+    #block3{
+    
+        display: none;
+    }
+
+
+    .menu{
+        
+        grid-template-columns: 50px 110px  172px;
+       
+    }
+
+
+    #grid1{
+        display: none;
+    }
+    #grid7{
+        display: none;
+    }
+   
+   
+    #grid9{
+        display: none;
+    }
+    #grid10{
+        display: none;
+    }
+    .menu{
+        
+        grid-template-columns: 50px 110px  1fr;
+       
+    }
+
+    #grid2{
+        background-image: url(assets/1_adapt.png);
+    }
+
+    .btn{
+        margin-top: 0;
+        color: #FFFFFF;
+        background: #6C5CE7;
+        border-radius: 999px;
+        padding: 8px 15px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 48px;
+        border: 0;
+        
+        text-align: center;
+    }
+
+    #grid3{
+        grid-row: 5/7 ;
+        grid-column: 2/3 ;
+        margin-top: 20px;
+    }
+    
+    .txt2:before{
+        content: "To create any grid by scaling and resizing";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 64px;
+        
+    }
+
+    .txt1 > span:before{
+        content: "Cool";
+    }
+    
+    .subtitle_card{
+        grid-template-columns: 183px 265px 170px 172px 60px;
+        grid-template-rows: 67px 60px 268px 283px 180px;
+    }
+}
+
+@media screen and (max-width: 863px){
+    .subtitle_card{
+        grid-template-columns: 133px 265px 170px 142px ;
+    }
+}
+
+@media screen and (max-width: 782px){
+    .subtitle_card{
+        grid-template-columns: 133px 282px 170px 92px ;
+    }
 }

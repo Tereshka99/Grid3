@@ -33,7 +33,14 @@ body{
     align-items: center;
 }
  
-
+.burger > div{
+    width: 40px;
+    height: 7px;
+    margin-top: 3px;
+    border-radius: 10px;
+    background-color: #5C5C5C;
+    display: none;
+}
 
 #block1{
     grid-column: 1/2;
@@ -475,10 +482,14 @@ a{
 
     #grid2{
         background-size: 100% 60%;
+        margin-top: 100px;
     }
     #grid4{
         background-size: 100% 40%;
-        margin-top: 90px;
+        margin-top: 170px;
+    }
+    #grid8{
+        margin-top: 24px;
     }
     #block4 > .btn{
         font-size: 12px;
@@ -489,5 +500,19 @@ a{
         grid-row: 5/7 ;
         grid-column: 3/5 ;
         margin-top: 90px;
+    }
+
+    .burger > div{
+        display: block;
+    }
+    #block1 > a{
+        display: none;
+    }
+
+    .logo_text{
+        font-size: 40px;
+    }
+    .subtitle_card{
+        grid-gap: 1px 10px;
     }
 }

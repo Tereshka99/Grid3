@@ -285,6 +285,12 @@ a{
     background-repeat: no-repeat; 
 }
 
+#grid11{
+    background-image: url(assets/arrow.svg);
+    display: none;
+    background-repeat: no-repeat; 
+}
+
 .btn{
 
     color: #FFFFFF;
@@ -523,5 +529,12 @@ a{
     }
     .subtitle_card{
         margin-top: 0px;
+        
+    }
+    #grid11{
+        display: block;
+        grid-column: 2/4;
+        grid-row: 2/3;
+        margin-left: 50px;
     }
 }

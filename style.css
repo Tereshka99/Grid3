@@ -198,12 +198,17 @@ a{
     border-radius: 100px;
 }
 
+.container-grid{
+    overflow: hidden;
+}
+
 .subtitle_card{
     margin-top: 64px;
     display: grid;
-    grid-template-columns: 270px 270px 180px 182px 182px;
+    grid-template-columns: 1fr 1fr 0.61fr 0.67fr 0.65fr;
     grid-template-rows: 67px 60px 268px 193px 180px;
-    grid-gap: 12px 20px;
+    grid-gap: 15px 10px;
+   
 }
 
 #grid1{
@@ -216,6 +221,7 @@ a{
     font-size: 18px;
     line-height: 32px;
     color: #2D3436;
+    overflow: hidden;
 }
 
 #grid2{
@@ -276,6 +282,7 @@ a{
     grid-row: 3/5 ;
     grid-column: 5/6 ;
     background-repeat: no-repeat; 
+    overflow: hidden;
 }
 
 #grid10{
@@ -283,6 +290,7 @@ a{
     grid-row: 4/6 ;
     grid-column: 5/6 ;
     background-repeat: no-repeat; 
+    overflow: hidden;
 }
 
 #grid11{
@@ -313,6 +321,34 @@ a{
 
 
 
+.footer_sections{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#icon1{
+background-image: url(assets/icon-facebook.svg);
+}
+
+#icon2{
+    
+}
+
+#icon3{
+    
+}
+
+#icon4{
+    
+}
+
+#icon5{
+    display: none;
+    
+}
+
 
 @media screen and (max-width: 1181px){
     
@@ -322,27 +358,16 @@ a{
         
     }
 
-
-
-
-    .subtitle_card{
-       
-        grid-template-columns: 263px 290px 160px 142px 135px;
-        
-    }
 }
 
-@media screen and (max-width: 1087px){
+@media screen and (max-width: 1128px){
 
-    .subtitle_card{
-       
-        grid-template-columns: 263px 290px 160px 142px 110px;
-        
-    }
+ .subtitle_card{
+    width: calc(100% + 200px);
+    margin-left: -100px;
+ }
 
 }
-
-
 
 
 @media screen and (max-width: 1060px){
@@ -352,13 +377,11 @@ a{
         display: none;
     }
 
-
     .menu{
         
         grid-template-columns: 50px 110px  172px;
        
     }
-
 
     #grid1{
         display: none;
@@ -367,21 +390,16 @@ a{
         display: none;
     }
    
-   
-    #grid9{
-        display: none;
+    .subtitle_card{
+        margin-top: 64px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 0.61fr 0.67fr 0.65fr;
+        grid-template-rows: 67px 60px 268px 193px 180px;
+        grid-gap: 15px 5px;
     }
-    #grid10{
-        display: none;
-    }
+    
     .menu{
-        
         grid-template-columns: 50px 110px  1fr;
-       
-    }
-
-    #grid2{
-        background-image: url(assets/1_adapt.png);
     }
 
     .btn{
@@ -394,7 +412,6 @@ a{
         font-size: 22px;
         line-height: 48px;
         border: 0;
-        
         text-align: center;
     }
 
@@ -409,32 +426,23 @@ a{
         font-style: normal;
         font-weight: 900;
         font-size: 64px;
-        
     }
 
     .txt1 > span:before{
         content: "Cool";
     }
     
-    .subtitle_card{
-        grid-template-columns: 183px 265px 170px 172px 60px;
-        grid-template-rows: 67px 60px 268px 283px 180px;
-    }
 }
 
-@media screen and (max-width: 863px){
+
+@media screen and (max-width: 985px){
     .subtitle_card{
-        grid-template-columns: 133px 265px 170px 142px ;
+       width: calc(100% + 220px);
+       margin-left: -40px;
     }
-}
+   }
 
 @media screen and (max-width: 782px){
-    .subtitle_card{
-        grid-template-columns: 1fr 1fr 1fr 1fr ;
-    }
-    .container{
-        max-width: 100%;
-    }
     #grid4{
         background-size: 88% 55%;
     }
@@ -482,7 +490,6 @@ a{
 
 @media screen and (max-width: 403px){
     .btn{
-       
         font-size: 19px;
     }
 
@@ -535,6 +542,6 @@ a{
         display: block;
         grid-column: 2/4;
         grid-row: 2/3;
-        margin-left: 50px;
+        margin-left: 40px;
     }
 }

@@ -321,6 +321,34 @@ a{
 
 
 
+.footer_sections{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#icon1{
+background-image: url(assets/icon-facebook.svg);
+}
+
+#icon2{
+    
+}
+
+#icon3{
+    
+}
+
+#icon4{
+    
+}
+
+#icon5{
+    display: none;
+    
+}
+
 
 @media screen and (max-width: 1181px){
     
@@ -330,10 +358,6 @@ a{
         
     }
 
-
-
-
-  
 }
 
 @media screen and (max-width: 1128px){
@@ -346,8 +370,6 @@ a{
 }
 
 
-
-
 @media screen and (max-width: 1060px){
    
     #block3{
@@ -355,13 +377,11 @@ a{
         display: none;
     }
 
-
     .menu{
         
         grid-template-columns: 50px 110px  172px;
        
     }
-
 
     #grid1{
         display: none;
@@ -378,14 +398,9 @@ a{
         grid-gap: 15px 5px;
     }
     
-   
     .menu{
-        
         grid-template-columns: 50px 110px  1fr;
-       
     }
-
-   
 
     .btn{
         margin-top: 0;
@@ -397,7 +412,6 @@ a{
         font-size: 22px;
         line-height: 48px;
         border: 0;
-        
         text-align: center;
     }
 
@@ -412,28 +426,23 @@ a{
         font-style: normal;
         font-weight: 900;
         font-size: 64px;
-        
     }
 
     .txt1 > span:before{
         content: "Cool";
     }
     
-    
 }
 
 
 @media screen and (max-width: 985px){
-
     .subtitle_card{
        width: calc(100% + 220px);
        margin-left: -40px;
     }
-   
    }
+
 @media screen and (max-width: 782px){
-   
-    
     #grid4{
         background-size: 88% 55%;
     }
@@ -481,7 +490,6 @@ a{
 
 @media screen and (max-width: 403px){
     .btn{
-       
         font-size: 19px;
     }
 
@@ -534,6 +542,6 @@ a{
         display: block;
         grid-column: 2/4;
         grid-row: 2/3;
-        margin-left: 50px;
+        margin-left: 40px;
     }
 }

@@ -43,3 +43,22 @@ body{
     left: 0;
     border-radius: 100px;
 }
+
+
+
+.advantages-head{
+    margin-left: 135px;
+}
+
+.advantages-blocks{
+    display: flex;
+}
+
+.advantages-item{
+}
+
+.advantages-button{
+    border: 1px solid #ADADAD;
+    box-sizing: border-box;
+    border-radius: 8 16 8 16px;
+}

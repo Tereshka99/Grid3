@@ -139,18 +139,6 @@ a{
     font-size: 18px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .offer{
     margin-top: 3px;
    background-image: url(./assets/gr.jpg);
@@ -199,20 +187,95 @@ a{
 }
 
 .advantages-head{
-    margin-left: 135px;
+    text-align: left;
+    font-size: 32px;
+    line-height: 48px;
+    margin-top: 80px;
+}
+
+.advantages-subtitle{
+    text-align: left;
+    font-size: 24px;
+    line-height: 36px;
+    margin-right: 170px;
+    margin-top: 15px;
+    margin-bottom: 40px;
 }
 
 .advantages-blocks{
     display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
 }
 
+
 .advantages-item{
+    margin-right: 30px;
 }
 
 .advantages-button{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 18px;
+    width: 114px;
+    line-height: 48px;
     border: 1px solid #ADADAD;
     box-sizing: border-box;
-    border-radius: 8 16 8 16px;
+    border-radius:16px;
+    font-weight: 600;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2px;
+}    
+
+.advantages-icon-phone-item{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #E84393;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.advantages-icon-clocks-item{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #0984E3;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.advantages-icon-lightning-item{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #6C5CE7;
+    border-radius: 999px;
+    width: 70px;
+    height: 70px;
+}
+
+.advantages-icon-like-item{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #00B894;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.advantages-name{
+    text-align: left;
+    margin-top: 16px;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.description-item{
+    text-align: left;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 8px;
 }
 
 .container-grid{
